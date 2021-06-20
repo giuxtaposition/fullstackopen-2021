@@ -64,7 +64,6 @@ const App = () => {
       `Do you really want to delete ${personToDelete.name}?`
     )
     if (result) {
-      const person = persons.find(p => p.id === personToDelete.id)
       phonebookService
         .deletePerson(personToDelete.id)
         .then(returnedPhonebook => {
