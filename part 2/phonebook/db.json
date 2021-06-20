@@ -1,0 +1,39 @@
+{
+  "persons": [
+    {
+      "name": "Arto Hellas",
+      "number": "040-123456",
+      "id": 1
+    },
+    {
+      "name": "Ada Lovelace",
+      "number": "39-44-5323523",
+      "id": 2
+    },
+    {
+      "name": "Dan Abramov",
+      "number": "12-43-234345",
+      "id": 3
+    },
+    {
+      "name": "Mary Poppendieck",
+      "number": "3208031758",
+      "id": 4
+    },
+    {
+      "name": "Potato Lexa",
+      "number": "3200803215468",
+      "id": 5
+    },
+    {
+      "name": "Hello SPanck",
+      "number": "1806065487",
+      "id": 6
+    },
+    {
+      "name": "Iris Rose",
+      "number": "51869460157",
+      "id": 7
+    }
+  ]
+}
