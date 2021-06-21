@@ -47,16 +47,24 @@ const App = () => {
       number: newNumber,
     }
 
-    phonebookService.create(personObject).then(returnedPhonebook => {
-      setPersons(persons.concat(returnedPhonebook))
-      setNewName('')
-      setNewNumber('')
+    phonebookService
+      .create(personObject)
+      .then(returnedPhonebook => {
+        setPersons(persons.concat(returnedPhonebook))
+        setNewName('')
+        setNewNumber('')
 
-      setNotification({
-        message: `Added ${returnedPhonebook.name}`,
-        status: 'success',
+        setNotification({
+          message: `Added ${returnedPhonebook.name}`,
+          status: 'success',
+        })
       })
-    })
+      .catch(error => {
+        setNotification({
+          message: error.response.data,
+          status: 'error',
+        })
+      })
   }
 
   const deletePerson = personToDelete => {
