@@ -61,7 +61,7 @@ const App = () => {
       })
       .catch(error => {
         setNotification({
-          message: error.response.data,
+          message: error.response.data.error,
           status: 'error',
         })
       })
@@ -116,12 +116,19 @@ const App = () => {
             })
           })
           .catch(error => {
-            setNotification({
-              message: `the entry '${person.name}' has already been deleted from server`,
-              status: 'error',
-            })
+            if (error.response.data.error.includes('Validation failed')) {
+              setNotification({
+                message: error.response.data.error,
+                status: 'error',
+              })
+            } else {
+              setNotification({
+                message: `the entry '${person.name}' has already been deleted from server`,
+                status: 'error',
+              })
 
-            setPersons(persons.filter(p => p.id !== updatedPerson.id))
+              setPersons(persons.filter(p => p.id !== updatedPerson.id))
+            }
           })
       }
     } else {

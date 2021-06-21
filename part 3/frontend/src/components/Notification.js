@@ -5,7 +5,7 @@ const Notification = ({ message, status }) => {
 
   useEffect(() => {
     setShow(true)
-    var timer = setTimeout(() => setShow(false), 2000)
+    var timer = setTimeout(() => setShow(false), 2500)
 
     return () => {
       clearTimeout(timer)
