@@ -1,19 +1,45 @@
 const supertest = require('supertest')
 const mongoose = require('mongoose')
-// const jwt = require('jsonwebtoken')
 const helper = require('./test_helper')
+const jwt = require('jsonwebtoken')
 const app = require('../app')
 const api = supertest(app)
+const bcrypt = require('bcrypt')
 
 const Blog = require('../models/blog')
+const User = require('../models/user')
+
+var tokenForUser
+
+beforeAll(async () => {
+  await User.deleteMany({})
+  const passwordForUser = await bcrypt.hash('ILikePotatoes', 10)
+  const userTest = await new User({
+    username: 'giuxtaposition',
+    name: 'giuxtaposition',
+    passwordHash: passwordForUser,
+  }).save()
+
+  await api
+    .post('/api/users')
+    .send(userTest)
+    .set('Accept', 'application/json')
+    .expect('Content-Type', /application\/json/)
+
+  const userForToken = {
+    username: userTest.username,
+    id: userTest.id,
+  }
+
+  tokenForUser = jwt.sign(userForToken, process.env.SECRET, {
+    expiresIn: 60 * 60,
+  })
+})
 
 beforeEach(async () => {
   await Blog.deleteMany({})
-  await Promise.all(
-    helper.initialBlogs.map(blog => {
-      return new Blog(blog).save()
-    })
-  )
+
+  await Promise.all(await Blog.insertMany(helper.initialBlogs))
 })
 
 describe('when there is initially some blogs saved', () => {
@@ -27,6 +53,18 @@ describe('when there is initially some blogs saved', () => {
   test('are returned the correct number of blogs', async () => {
     const response = await api.get('/api/blogs')
     expect(response.body).toHaveLength(helper.initialBlogs.length)
+  })
+
+  test('can be viewed individually', async () => {
+    const allBlogsInDb = await helper.blogsInDb()
+    const blogToView = allBlogsInDb[0]
+
+    const response = await api
+      .get(`/api/blogs/${blogToView.id}`)
+      .expect(200)
+      .expect('Content-Type', /application\/json/)
+
+    expect(response.body.id).toBe(blogToView.id)
   })
 
   test('have a unique identifier named "id', async () => {
@@ -43,7 +81,11 @@ describe('Adding a new blog', () => {
       url: 'https://www.giuxtaposition.tech',
       likes: 69,
     }
-    await api.post('/api/blogs').send(newBlog).expect(200)
+    await api
+      .post('/api/blogs')
+      .set('Authorization', `bearer ${tokenForUser}`)
+      .send(newBlog)
+      .expect(200 | 201)
     const updatedBlogs = await api.get('/api/blogs')
     expect(updatedBlogs.body).toHaveLength(helper.initialBlogs.length + 1)
   })
@@ -54,7 +96,11 @@ describe('Adding a new blog', () => {
       author: 'Giulia Ye',
       url: 'https://www.giuxtaposition.tech',
     }
-    await api.post('/api/blogs').send(newBlog).expect(200)
+    await api
+      .post('/api/blogs')
+      .set('Authorization', `bearer ${tokenForUser}`)
+      .send(newBlog)
+      .expect(200 | 201)
     const updatedBlogs = await api.get('/api/blogs')
     expect(updatedBlogs.body[helper.initialBlogs.length].likes).toBe(0)
   })
@@ -65,7 +111,11 @@ describe('Adding a new blog', () => {
       url: 'https://www.giuxtaposition.tech',
       likes: 69,
     }
-    await api.post('/api/blogs').send(newBlog).expect(400)
+    await api
+      .post('/api/blogs')
+      .set('Authorization', `bearer ${tokenForUser}`)
+      .send(newBlog)
+      .expect(400)
   })
 
   test('author is required', async () => {
@@ -74,7 +124,11 @@ describe('Adding a new blog', () => {
       url: 'https://www.giuxtaposition.tech',
       likes: 69,
     }
-    await api.post('/api/blogs').send(newBlog).expect(400)
+    await api
+      .post('/api/blogs')
+      .set('Authorization', `bearer ${tokenForUser}`)
+      .send(newBlog)
+      .expect(400)
   })
 })
 

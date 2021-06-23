@@ -50,8 +50,8 @@ const blogs = [
 ]
 
 const dummy = blogs => {
-  console.log(blogs)
-  return 1
+  blogs = 1
+  return blogs
 }
 
 const totalLikes = blogs => {
