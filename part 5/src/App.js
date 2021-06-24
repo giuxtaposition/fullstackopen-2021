@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
 import Blog from './components/Blog'
 import Login from './components/Login'
-import AddBlog from './components/AddBlog'
 import Togglable from './components/Togglable'
 import Notification from './components/Notification'
 import blogService from './services/blogs'
 import loginService from './services/login'
+import AddBlogForm from './components/AddBlogForm'
 
 const App = () => {
   const [blogs, setBlogs] = useState([])
@@ -174,7 +174,7 @@ const App = () => {
             </p>
 
             <Togglable buttonLabel='Create New Blog' ref={blogFormRef}>
-              <AddBlog createBlog={createBlog} />
+              <AddBlogForm createBlog={createBlog} />
             </Togglable>
           </div>
           <h2>blogs</h2>
@@ -184,7 +184,7 @@ const App = () => {
               key={blog.id}
               updateBlog={updateBlog}
               deleteBlog={deleteBlog}
-              currentUser={user}
+              currentUser={user.username}
             />
           ))}
         </>

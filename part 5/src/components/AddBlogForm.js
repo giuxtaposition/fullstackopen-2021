@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-const AddBlog = ({ createBlog }) => {
+const AddBlogForm = ({ createBlog }) => {
   //New Blog
   const [newTitle, setNewTitle] = useState('')
   const [newAuthor, setNewAuthor] = useState('')
@@ -25,6 +25,7 @@ const AddBlog = ({ createBlog }) => {
         <div>
           title:{' '}
           <input
+            id='form-title'
             onChange={({ target }) => setNewTitle(target.value)}
             value={newTitle}
           />
@@ -33,6 +34,7 @@ const AddBlog = ({ createBlog }) => {
         <div>
           author:{' '}
           <input
+            id='form-author'
             onChange={({ target }) => setNewAuthor(target.value)}
             value={newAuthor}
           />
@@ -41,6 +43,7 @@ const AddBlog = ({ createBlog }) => {
         <div>
           url:{' '}
           <input
+            id='form-url'
             onChange={({ target }) => setNewUrl(target.value)}
             value={newUrl}
           />
@@ -52,4 +55,4 @@ const AddBlog = ({ createBlog }) => {
   )
 }
 
-export default AddBlog
+export default AddBlogForm

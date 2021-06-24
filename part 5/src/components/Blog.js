@@ -9,7 +9,7 @@ const Blog = ({ blog, updateBlog, deleteBlog, currentUser }) => {
     blog: PropTypes.object.isRequired,
     updateBlog: PropTypes.func.isRequired,
     deleteBlog: PropTypes.func.isRequired,
-    currentUser: PropTypes.object.isRequired,
+    currentUser: PropTypes.string.isRequired,
   }
 
   const blogStyle = {
@@ -45,10 +45,10 @@ const Blog = ({ blog, updateBlog, deleteBlog, currentUser }) => {
   }
 
   return (
-    <div style={blogStyle}>
+    <div style={blogStyle} className='blog'>
       <p>
         <b>{blog.title}</b> by {blog.author}{' '}
-        <button onClick={toggleVisibility}>View</button>
+        <button onClick={toggleVisibility}>{!visible ? 'View' : 'Hide'}</button>
       </p>
       {visible && (
         <>
@@ -57,7 +57,7 @@ const Blog = ({ blog, updateBlog, deleteBlog, currentUser }) => {
             Likes: {blog.likes} <button onClick={addLike}>Like</button>
           </p>
           <p>{user}</p>
-          {user === currentUser.username && (
+          {user === currentUser && (
             <p>
               <button onClick={remove}>Remove</button>
             </p>
