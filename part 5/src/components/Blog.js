@@ -54,7 +54,8 @@ const Blog = ({ blog, updateBlog, deleteBlog, currentUser }) => {
         <>
           <p>{blog.url}</p>
           <p>
-            Likes: {blog.likes} <button onClick={addLike}>Like</button>
+            Likes: <span id='blog-likes'>{blog.likes}</span>{' '}
+            <button onClick={addLike}>Like</button>
           </p>
           <p>{user}</p>
           {user === currentUser && (

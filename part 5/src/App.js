@@ -152,6 +152,7 @@ const App = () => {
 
   return (
     <div>
+      <h1>Blog App</h1>
       <Notification message={notificationMessage} status={notificationStatus} />
 
       {user === null ? (
@@ -166,28 +167,28 @@ const App = () => {
           />
         </div>
       ) : (
-        <>
-          <div>
-            <p>
-              {user.username} logged in{' '}
-              <button onClick={handleLogout}>Logout</button>
-            </p>
+        <div>
+          <p>
+            {user.username} logged in{' '}
+            <button onClick={handleLogout}>Logout</button>
+          </p>
 
-            <Togglable buttonLabel='Create New Blog' ref={blogFormRef}>
-              <AddBlogForm createBlog={createBlog} />
-            </Togglable>
-          </div>
+          <Togglable buttonLabel='Create New Blog' ref={blogFormRef}>
+            <AddBlogForm createBlog={createBlog} />
+          </Togglable>
           <h2>blogs</h2>
-          {blogs.map(blog => (
-            <Blog
-              blog={blog}
-              key={blog.id}
-              updateBlog={updateBlog}
-              deleteBlog={deleteBlog}
-              currentUser={user.username}
-            />
-          ))}
-        </>
+          <div className='blog-list'>
+            {blogs.map(blog => (
+              <Blog
+                blog={blog}
+                key={blog.id}
+                updateBlog={updateBlog}
+                deleteBlog={deleteBlog}
+                currentUser={user.username}
+              />
+            ))}
+          </div>
+        </div>
       )}
     </div>
   )
