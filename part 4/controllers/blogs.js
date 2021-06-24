@@ -67,7 +67,9 @@ blogsRouter.delete('/:id', async (request, response) => {
     })
   }
 
-  if (blog.user.toString() !== request.user.id.toString()) {
+  if (blog['user'].toString() !== request.user.id.toString()) {
+    console.log(blog.user)
+    console.log(request.user.id)
     return response.status(401).json({
       error: 'blogs can be deleted only by the user who added the blog',
     })

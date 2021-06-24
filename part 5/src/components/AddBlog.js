@@ -1,28 +1,55 @@
-import React from 'react'
-const AddBlog = ({
-  addBlog,
-  newTitle,
-  handleTitleChange,
-  newAuthor,
-  handleAuthorChange,
-  newUrl,
-  handleUrlChange,
-}) => (
-  <form onSubmit={addBlog}>
-    <div>
-      title: <input onChange={handleTitleChange} value={newTitle} />
-    </div>
+import React, { useState } from 'react'
+const AddBlog = ({ createBlog }) => {
+  //New Blog
+  const [newTitle, setNewTitle] = useState('')
+  const [newAuthor, setNewAuthor] = useState('')
+  const [newUrl, setNewUrl] = useState('')
 
-    <div>
-      author: <input onChange={handleAuthorChange} value={newAuthor} />
-    </div>
+  const addBlog = async event => {
+    event.preventDefault()
 
-    <div>
-      url: <input onChange={handleUrlChange} value={newUrl} />
-    </div>
+    createBlog({
+      title: newTitle,
+      author: newAuthor,
+      url: newUrl,
+    })
+    setNewTitle('')
+    setNewAuthor('')
+    setNewUrl('')
+  }
 
-    <button type='submit'>save</button>
-  </form>
-)
+  return (
+    <div>
+      <h2>Add New Blog</h2>
+      <form onSubmit={addBlog}>
+        <div>
+          title:{' '}
+          <input
+            onChange={({ target }) => setNewTitle(target.value)}
+            value={newTitle}
+          />
+        </div>
+
+        <div>
+          author:{' '}
+          <input
+            onChange={({ target }) => setNewAuthor(target.value)}
+            value={newAuthor}
+          />
+        </div>
+
+        <div>
+          url:{' '}
+          <input
+            onChange={({ target }) => setNewUrl(target.value)}
+            value={newUrl}
+          />
+        </div>
+
+        <button type='submit'>save</button>
+      </form>
+    </div>
+  )
+}
 
 export default AddBlog
