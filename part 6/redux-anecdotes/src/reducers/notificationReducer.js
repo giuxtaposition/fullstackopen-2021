@@ -9,13 +9,19 @@ const notificationReducer = (state = '', action) => {
   }
 }
 
+var timeoutID
+
 export const showNotification = (message, time) => {
+  if (timeoutID) {
+    clearTimeout(timeoutID)
+  }
   return async dispatch => {
+    clearTimeout()
     dispatch({
       type: 'SHOW_NOTIFICATION',
       message,
     })
-    setTimeout(() => {
+    timeoutID = setTimeout(() => {
       dispatch(hideNotification())
     }, time * 1000)
   }

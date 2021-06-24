@@ -18,7 +18,6 @@ const anecdoteReducer = (state = [], action) => {
         .sort((a, b) => b.votes - a.votes)
 
     case 'CREATE_ANECDOTE':
-      console.log(action.data)
       return [...state, action.data]
     default:
       return state
