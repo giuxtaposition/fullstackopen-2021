@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken')
 const mongoose = require('mongoose')
 const Book = require('./models/book')
 const Author = require('./models/author')
+const User = require('./models/user')
 
 console.log('connecting to', config.MONGODB_URI)
 
@@ -159,7 +160,7 @@ const resolvers = {
 
     // Create New User
     createUser: (root, args) => {
-      const user = new User({ username: args.username })
+      const user = new User({ ...args, id: uuidv4() })
 
       return user.save().catch(error => {
         throw new UserInputError(error.message, {
@@ -172,7 +173,7 @@ const resolvers = {
     login: async (root, args) => {
       const user = await User.findOne({ username: args.username })
 
-      if (!user || args.password !== 'secret') {
+      if (!user || args.password !== config.SECRET) {
         throw new UserInputError('wrong credentials')
       }
 
@@ -218,9 +219,7 @@ const server = new ApolloServer({
     const auth = req ? req.headers.authorization : null
     if (auth && auth.toLowerCase().startsWith('bearer ')) {
       const decodedToken = jwt.verify(auth.substring(7), config.SECRET)
-      const currentUser = await User.findById(decodedToken.id).populate(
-        'favoriteGenre'
-      )
+      const currentUser = await User.findById(decodedToken.id)
       return { currentUser }
     }
   },
