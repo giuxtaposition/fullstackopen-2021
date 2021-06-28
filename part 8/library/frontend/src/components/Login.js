@@ -8,13 +8,8 @@ const Login = ({ setToken, setError, show, setPage }) => {
 
   const [login, result] = useMutation(LOGIN, {
     errorPolicy: 'all',
-    onError: ({ graphQLErrors, networkError }) => {
-      if (graphQLErrors) {
-        setError(graphQLErrors[0].message)
-      }
-      if (networkError) {
-        setError(networkError)
-      }
+    onError: error => {
+      setError(error.graphQLErrors[0].message)
     },
   })
 

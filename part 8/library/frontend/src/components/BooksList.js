@@ -7,8 +7,6 @@ const BooksList = props => {
     variables: { genres: props.genres },
   })
 
-  console.log(props.genres)
-
   useEffect(() => {
     refetch()
   }, [props.books])

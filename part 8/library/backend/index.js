@@ -7,6 +7,8 @@ const mongoose = require('mongoose')
 const Book = require('./models/book')
 const Author = require('./models/author')
 const User = require('./models/user')
+const { PubSub } = require('apollo-server')
+const pubsub = new PubSub()
 
 console.log('connecting to', config.MONGODB_URI)
 
@@ -23,6 +25,8 @@ mongoose
   .catch(error => {
     console.log('error connection to MongoDB:', error.message)
   })
+
+mongoose.set('debug', true)
 
 const typeDefs = gql`
   type Query {
@@ -70,6 +74,10 @@ const typeDefs = gql`
     createUser(username: String!, favoriteGenre: String!): User
     login(username: String!, password: String!): Token
     addNewFavoriteGenre(favoriteGenre: String!): User
+  }
+
+  type Subscription {
+    bookAdded: Book!
   }
 `
 
@@ -136,6 +144,7 @@ const resolvers = {
       return genresList()
     },
   },
+
   Mutation: {
     //Add New Book
     addBook: async (root, args, context) => {
@@ -168,7 +177,7 @@ const resolvers = {
         }
       }
 
-      const book = new Book({ ...args, author: author.id, id: uuidv4() })
+      const book = new Book({ ...args, author, id: uuidv4() })
       try {
         await book.save()
       } catch (error) {
@@ -176,6 +185,8 @@ const resolvers = {
           invalidArgs: args,
         })
       }
+      pubsub.publish('BOOK_ADDED', { bookAdded: book })
+
       return book
     },
 
@@ -246,6 +257,11 @@ const resolvers = {
       return foundBooks.length
     },
   },
+  Subscription: {
+    bookAdded: {
+      subscribe: () => pubsub.asyncIterator(['BOOK_ADDED']),
+    },
+  },
 }
 
 const server = new ApolloServer({
@@ -261,6 +277,7 @@ const server = new ApolloServer({
   },
 })
 
-server.listen().then(({ url }) => {
+server.listen().then(({ url, subscriptionsUrl }) => {
   console.log(`Server ready at ${url}`)
+  console.log(`Subscriptions ready at ${subscriptionsUrl}`)
 })
