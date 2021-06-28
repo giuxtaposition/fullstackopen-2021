@@ -28,9 +28,10 @@ const typeDefs = gql`
   type Query {
     bookCount: Int!
     authorCount: Int!
-    allBooks(author: String, genre: String): [Book!]
+    allBooks(author: String, genres: [String]): [Book!]
     allAuthors: [Author!]
     me: User
+    allGenres: [String!]
   }
 
   type Book {
@@ -81,7 +82,7 @@ const resolvers = {
     authorCount: () => Author.collection.countDocuments(),
 
     allBooks: async (root, args) => {
-      if (args.author && args.genre) {
+      if (args.author && args.genres) {
         const booksByAuthorAndGenres = await Book.find({
           author: args.author,
           genres: args.genres,
@@ -91,14 +92,49 @@ const resolvers = {
       if (args.author) {
         return await Book.find({ author: args.author }).populate('author')
       }
-      if (args.genre) {
-        return await Book.find({ genres: args.genres }).populate('author')
+      if (args.genres) {
+        const books = await Book.find({}).populate('author')
+        let booksToReturn = []
+
+        books.forEach(book => {
+          let foundBook = args.genres.every(genre => {
+            let found = false
+            if (book.genres.includes(genre)) {
+              found = true
+            }
+            return found
+          })
+
+          if (foundBook) {
+            booksToReturn.push(book)
+          }
+        })
+
+        return booksToReturn
       }
 
       return await Book.find({}).populate('author')
     },
 
     allAuthors: () => Author.find({}),
+
+    allGenres: async () => {
+      const allGenresList = await Book.find({}, { genres: 1, _id: 0 })
+
+      const genresList = () => {
+        let cleanedUpList = []
+        allGenresList.forEach(genre => {
+          genre.genres.forEach(g => {
+            if (!cleanedUpList.includes(g)) {
+              cleanedUpList = cleanedUpList.concat(g)
+            }
+          })
+        })
+        return cleanedUpList
+      }
+
+      return genresList()
+    },
   },
   Mutation: {
     //Add New Book

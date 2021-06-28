@@ -34,10 +34,18 @@ const Authors = props => {
   const submit = async event => {
     event.preventDefault()
 
-    if (name !== '' && born !== '') {
+    if (born !== '') {
+      let authorName = name
+
+      if (name === '') {
+        // If user did not change default author
+        // OnChange function was not called
+        authorName = authors[0].name
+      }
+
       editAuthor({
         variables: {
-          name: name,
+          name: authorName,
           setBornTo: parseInt(born),
         },
       })
