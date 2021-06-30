@@ -8,7 +8,7 @@
 >
 > Other topics include debugging applications, configuration, managing runtime environments and NoSQL databases.
 
-Course Website: https://fullstackopen.com/en
+Course Website: [fullstackopen.com/en](https://fullstackopen.com/en)
 
 ## Certificate
 
@@ -17,17 +17,18 @@ Course Website: https://fullstackopen.com/en
 ## Course Exercises
 
 ### Part 0 - Fundamentals of Web apps
+
 *Traditional web applications, single page applications, HTTP forms, HTML & CSS review.*
 
 * [Traditional web app & SPA sequence diagrams](https://github.com/giuxtaposition/fullstackopen-2021/tree/main/part%200)
 
 ### Part 1 - Introduction to React
+
 *React, modern JavaScript, hooks vs "old react", debugging.*
 
 * [Anecdotes](https://github.com/giuxtaposition/fullstackopen-2021/tree/main/part%201/anecdotes)
 * [Courseinfo](https://github.com/giuxtaposition/fullstackopen-2021/tree/main/part%201/courseinfo)
 * [Unicafe](https://github.com/giuxtaposition/fullstackopen-2021/tree/main/part%201/unicafe)
-
 
 ### Part 2 - Communicating with server
 
