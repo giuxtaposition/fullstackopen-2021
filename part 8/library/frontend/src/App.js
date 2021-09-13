@@ -34,6 +34,7 @@ const App = () => {
     // Check that added book is not included in the current store
     const dataInStore = client.readQuery({ query: ALL_BOOKS })
     if (!includedIn(dataInStore.allBooks, addedBook)) {
+      console.log('addedBook', addedBook)
       client.writeQuery({
         query: ALL_BOOKS,
         data: { allBooks: dataInStore.allBooks.concat(addedBook) },
