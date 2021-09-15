@@ -1,3 +1,6 @@
 [submodule "part 3/backend"]
 	path = part 3/backend
 	url = git@github.com:giuxtaposition/fulstackopen-2021-part3.git
+[submodule "part 10/rate-repository-app"]
+	path = part 10/rate-repository-app
+	url = git@github.com:giuxtaposition/rate-repository-app.git
