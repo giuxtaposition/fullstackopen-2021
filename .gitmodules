@@ -7,3 +7,6 @@
 [submodule "part 11/full-stack-open-pokedex"]
 	path = part 11/full-stack-open-pokedex
 	url = git@github.com:giuxtaposition/full-stack-open-pokedex.git
+[submodule "part 11/bloglist-with-pipeline"]
+	path = part 11/bloglist-with-pipeline
+	url = git@github.com:giuxtaposition/bloglist.git
