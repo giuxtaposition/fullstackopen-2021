@@ -1,0 +1,451 @@
+Script started on 2021-09-26 11:14:20+02:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="141" LINES="18"]
+[0m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[49m[34m[0m[34m[49m[39m[39m─────────────────────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m8[0m[49m[39m[27m[24m[J[?25l8[0m[49m[39m[27m[24m[J[0m[27m[24m[J[0m[49m[39m
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?3[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?12l[?25h[?2004h[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m[39m
+[0m[49m[39m
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?3[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m
+[0m[49m[39m
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?3[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[32mscript[39m[32md[32mo[32mc[32mk[32me[32mr[39m start -i bold_bhabha[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m start -i bold_bhabha[K[?12l[?25h
+]2;docker start -i bold_bhabha]1;docker]0;script-answers: docker start -i bold_bhabha]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# [K]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# vim /usr/src/app/index.js 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;18r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[18;1H"/usr/src/app/index.js" 0L, 0C[2;1H�[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[1m[34m~                                                                                                                                            [3;1H~                                                                                                                                            [4;1H~                                                                                                                                            [5;1H~                                                                                                                                            [6;1H~                                                                                                                                            [7;1H~                                                                                                                                            [8;1H~                                                                                                                                            [9;1H~                                                                                                                                            [10;1H~                                                                                                                                            [11;1H~                                                                                                                                            [12;1H~                                                                                                                                            [13;1H~                                                                                                                                            [14;1H~                                                                                                                                            [15;1H~                                                                                                                                            [16;1H~                                                                                                                                            [17;1H~                                                                                                                                            [m[18;124H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[18;114Hi[1;1H[18;114H [1;1H[18;1H[1m-- INSERT --[m[18;13H[K[18;124H0,1[11CAll[1;1H[?25h[?25lc[18;124H1,2[1;2H[?25h[?25lk[18;126H3[1;3H[?25h[?25l[18;126H4[1;4H[?25h[?25l[18;126H3[1;3H[?25h[?25l[1;2H[K[18;126H2[1;2H[?25h[?25l[1;1H[K[18;126H1[1;1H[?25h[?25lc[18;126H2[1;2H[?25h[?25lo[18;126H3[1;3H[?25h[?25ln[18;126H4[1;4H[?25h[?25ls[18;126H5[1;5H[?25h[?25lo[18;126H6[1;6H[?25h[?25ll[18;126H7[1;7H[?25h[?25le[18;126H8[1;8H[?25h[?25l.[18;126H9[1;9H[?25h[?25ll[18;126H10[1;10H[?25h[?25lo[18;127H1[1;11H[?25h[?25lg[18;127H2[1;12H[?25h[?25l([18;127H3[1;13H[?25h[?25l[31m'[m[18;127H4[1;14H[?25h[?25l[31mH[m[18;127H5[1;15H[?25h[?25l[31me[m[18;127H6[1;16H[?25h[?25l[31ml[m[18;127H7[1;17H[?25h[?25l[31ml[m[18;127H8[1;18H[?25h[?25l[31mo[m[18;127H9[1;19H[?25h[?25l[31m [m[18;126H20[1;20H[?25h[?25l[31mW[m[18;127H1[1;21H[?25h[?25l[31mo[m[18;127H2[1;22H[?25h[?25l[31mr[m[18;127H3[1;23H[?25h[?25l[31ml[m[18;127H4[1;24H[?25h[?25l[31m'[m[18;127H5[1;25H[?25h[?25l[1;24H[K[18;127H4[1;24H[?25h[?25l[31md[m[18;127H5[1;25H[?25h[?25l[31m'[m[18;127H6[1;26H[?25h[?25l)[1;12H[46m([13C)[m[18;127H7[1;27H[?25h[18;1H[K[1;26H[?25l[18;114H^[[1;26H[18;114H  [1;27H[18;124H1,26[10CAll[1;26H[?25h[?25l[18;114H:[1;26H[18;114H[K[18;1H:[?2004h[?25hwq[?25l[?2004l"/usr/src/app/index.js" 1L, 27C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# [Kexit
+exit
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?3[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────[0m[49m[33m[0m[33m[43m[30m 58s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[43m[30m[30m[0m[30m[43m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m [33m58s[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?3[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────[0m[49m[33m[0m[33m[43m[30m 58s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[43m[30m[30m[0m[30m[43m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[32mdocker[39m start -i bold_bhabha[27D[32ms[32mc[32mr[32mi[32mp[32mt[39m                     [21D[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mscript[39m[K[?12l[?25h
+]2;script]1;script]0;script-answers: scriptScript started, output log file is 'typescript'.
+[0m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[49m[34m[0m[34m[49m[39m[39m─────────────────────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m8[0m[49m[39m[27m[24m[J[?25l8[0m[49m[39m[27m[24m[J[0m[27m[24m[J[0m[49m[39m
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?12l[?25h[?2004h[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m[39m
+[0m[49m[39m
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m
+[0m[49m[39m
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[32mscript[39m[32md[32mo[32mc[32mk[32me[32mr[39m start -i bold_bhabha[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m start -i bold_bhabha[K[?12l[?25h
+]2;docker start -i bold_bhabha]1;docker]0;script-answers: docker start -i bold_bhabha]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# [K]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# curl -sL https://deb.nodesource.com/setup_16.x | bash
+bash: curl: command not found
+]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# [K....    curl -sL https://deb.nodesource.com/setup_16.x | bash]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# exit[Kvim /usr/src/app/index.js exit[K[1@cexit[1@scexitapt-get -y install vim   curl
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 76%Reading package lists... 76%Reading package lists... 79%Reading package lists... 79%Reading package lists... 85%Reading package lists... 85%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 3%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates krb5-locales libasn1-8-heimdal libbrotli1 libcurl4 libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal
+  libheimbase1-heimdal libheimntlm0-heimdal libhx509-5-heimdal libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3 libkrb5support0
+  libldap-2.4-2 libldap-common libnghttp2-14 libpsl5 libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4
+  libwind0-heimdal openssl publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+  libsasl2-modules-sql
+The following NEW packages will be installed:
+  ca-certificates curl krb5-locales libasn1-8-heimdal libbrotli1 libcurl4 libgssapi-krb5-2 libgssapi3-heimdal libhcrypto4-heimdal
+  libheimbase1-heimdal libheimntlm0-heimdal libhx509-5-heimdal libk5crypto3 libkeyutils1 libkrb5-26-heimdal libkrb5-3 libkrb5support0
+  libldap-2.4-2 libldap-common libnghttp2-14 libpsl5 libroken18-heimdal librtmp1 libsasl2-2 libsasl2-modules libsasl2-modules-db libssh-4
+  libwind0-heimdal openssl publicsuffix
+0 upgraded, 30 newly installed, 0 to remove and 5 not upgraded.
+Need to get 3577 kB of archives.
+After this operation, 11.2 MB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openssl amd64 1.1.1f-1ubuntu2.8 [620 kB]
+0% [1 openssl 1165 B/620 kB 0%]                               15% [Working]             Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 ca-certificates all 20210119~20.04.2 [145 kB]
+15% [2 ca-certificates 1165 B/145 kB 1%]                                        18% [Waiting for headers]                         Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 krb5-locales all 1.17-6ubuntu4.1 [11.4 kB]
+19% [3 krb5-locales 3272 B/11.4 kB 29%]                                       19% [Waiting for headers]                         Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5support0 amd64 1.17-6ubuntu4.1 [30.9 kB]
+20% [4 libkrb5support0 6027 B/30.9 kB 19%]                                          21% [Waiting for headers]                         Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libk5crypto3 amd64 1.17-6ubuntu4.1 [79.9 kB]
+21% [5 libk5crypto3 3769 B/79.9 kB 5%]                                      23% [Working]             Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libkeyutils1 amd64 1.6-6ubuntu1 [10.2 kB]
+23% [6 libkeyutils1 3184 B/10.2 kB 31%]                                       24% [Waiting for headers]                         Get:7 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libkrb5-3 amd64 1.17-6ubuntu4.1 [330 kB]
+24% [7 libkrb5-3 5717 B/330 kB 2%]                                  32% [Waiting for headers]                         Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgssapi-krb5-2 amd64 1.17-6ubuntu4.1 [121 kB]
+32% [8 libgssapi-krb5-2 8554 B/121 kB 7%]                                         36% [Working]             Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libpsl5 amd64 0.21.0-1ubuntu1 [51.5 kB]
+36% [9 libpsl5 1337 B/51.5 kB 3%]                                 37% [Working]             Get:10 http://archive.ubuntu.com/ubuntu focal/main amd64 publicsuffix all 20200303.0012-1 [111 kB]
+38% [10 publicsuffix 7458 B/111 kB 7%]                                      40% [Working]             Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libbrotli1 amd64 1.0.7-6ubuntu0.1 [267 kB]
+41% [11 libbrotli1 20.5 kB/267 kB 8%]                                     47% [Waiting for headers]                         Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libroken18-heimdal amd64 7.7.0+dfsg-1ubuntu1 [41.8 kB]
+48% [12 libroken18-heimdal 41.8 kB/41.8 kB 100%]                                                49% [Working]             Get:13 http://archive.ubuntu.com/ubuntu focal/main amd64 libasn1-8-heimdal amd64 7.7.0+dfsg-1ubuntu1 [181 kB]
+49% [13 libasn1-8-heimdal 0 B/181 kB 0%]                                        53% [Waiting for headers]                         Get:14 http://archive.ubuntu.com/ubuntu focal/main amd64 libheimbase1-heimdal amd64 7.7.0+dfsg-1ubuntu1 [29.7 kB]
+54% [14 libheimbase1-heimdal 25.9 kB/29.7 kB 87%]                                                 55% [Working]             Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 libhcrypto4-heimdal amd64 7.7.0+dfsg-1ubuntu1 [87.9 kB]
+55% [15 libhcrypto4-heimdal 0 B/87.9 kB 0%]                                           57% [Waiting for headers]                         Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libwind0-heimdal amd64 7.7.0+dfsg-1ubuntu1 [48.0 kB]
+58% [16 libwind0-heimdal 20.5 kB/48.0 kB 43%]                                             59% [Working]             Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 libhx509-5-heimdal amd64 7.7.0+dfsg-1ubuntu1 [107 kB]
+59% [17 libhx509-5-heimdal 0 B/107 kB 0%]                                         62% [Working]             Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libkrb5-26-heimdal amd64 7.7.0+dfsg-1ubuntu1 [208 kB]
+62% [18 libkrb5-26-heimdal 1165 B/208 kB 1%]                                            68% [Working]             Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libheimntlm0-heimdal amd64 7.7.0+dfsg-1ubuntu1 [15.1 kB]
+68% [19 libheimntlm0-heimdal 0 B/15.1 kB 0%]                                            69% [Working]             Get:20 http://archive.ubuntu.com/ubuntu focal/main amd64 libgssapi3-heimdal amd64 7.7.0+dfsg-1ubuntu1 [96.1 kB]
+69% [20 libgssapi3-heimdal 1166 B/96.1 kB 1%]                                             71% [Waiting for headers]                         Get:21 http://archive.ubuntu.com/ubuntu focal/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-2 [14.9 kB]
+71% [21 libsasl2-modules-db 321 B/14.9 kB 2%]                                             72% [Working]             Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 libsasl2-2 amd64 2.1.27+dfsg-2 [49.3 kB]
+72% [22 libsasl2-2 7365 B/49.3 kB 15%]                                      74% [Waiting for headers]                         Get:23 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libldap-common all 2.4.49+dfsg-2ubuntu1.8 [16.6 kB]
+74% [23 libldap-common 663 B/16.6 kB 4%]                                        75% [Waiting for headers]                         Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libldap-2.4-2 amd64 2.4.49+dfsg-2ubuntu1.8 [155 kB]
+75% [24 libldap-2.4-2 4060 B/155 kB 3%]                                       79% [Waiting for headers]                         Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libnghttp2-14 amd64 1.40.0-1build1 [78.7 kB]
+79% [25 libnghttp2-14 4002 B/78.7 kB 5%]                                        82% [Working]             Get:26 http://archive.ubuntu.com/ubuntu focal/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2build1 [54.9 kB]
+82% [26 librtmp1 0 B/54.9 kB 0%]                                84% [Working]             Get:27 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssh-4 amd64 0.9.3-2ubuntu2.2 [170 kB]
+84% [27 libssh-4 1165 B/170 kB 1%]                                  88% [Working]             Get:28 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libcurl4 amd64 7.68.0-1ubuntu2.7 [234 kB]
+88% [28 libcurl4 0 B/234 kB 0%]                               94% [Waiting for headers]                         Get:29 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 curl amd64 7.68.0-1ubuntu2.7 [161 kB]
+94% [29 curl 307 B/161 kB 0%]                             98% [Waiting for headers]                         Get:30 http://archive.ubuntu.com/ubuntu focal/main amd64 libsasl2-modules amd64 2.1.27+dfsg-2 [49.1 kB]
+99% [30 libsasl2-modules 20.5 kB/49.1 kB 42%]                                             100% [Working]              Fetched 3577 kB in 1s (4507 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package openssl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7233 files and directories currently installed.)
+Preparing to unpack .../00-openssl_1.1.1f-1ubuntu2.8_amd64.deb ...
+Unpacking openssl (1.1.1f-1ubuntu2.8) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../01-ca-certificates_20210119~20.04.2_all.deb ...
+Unpacking ca-certificates (20210119~20.04.2) ...
+Selecting previously unselected package krb5-locales.
+Preparing to unpack .../02-krb5-locales_1.17-6ubuntu4.1_all.deb ...
+Unpacking krb5-locales (1.17-6ubuntu4.1) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../03-libkrb5support0_1.17-6ubuntu4.1_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.17-6ubuntu4.1) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../04-libk5crypto3_1.17-6ubuntu4.1_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.17-6ubuntu4.1) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../05-libkeyutils1_1.6-6ubuntu1_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6-6ubuntu1) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../06-libkrb5-3_1.17-6ubuntu4.1_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.17-6ubuntu4.1) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../07-libgssapi-krb5-2_1.17-6ubuntu4.1_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.17-6ubuntu4.1) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../08-libpsl5_0.21.0-1ubuntu1_amd64.deb ...
+Unpacking libpsl5:amd64 (0.21.0-1ubuntu1) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../09-publicsuffix_20200303.0012-1_all.deb ...
+Unpacking publicsuffix (20200303.0012-1) ...
+Selecting previously unselected package libbrotli1:amd64.
+Preparing to unpack .../10-libbrotli1_1.0.7-6ubuntu0.1_amd64.deb ...
+Unpacking libbrotli1:amd64 (1.0.7-6ubuntu0.1) ...
+Selecting previously unselected package libroken18-heimdal:amd64.
+Preparing to unpack .../11-libroken18-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libroken18-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libasn1-8-heimdal:amd64.
+Preparing to unpack .../12-libasn1-8-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libasn1-8-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libheimbase1-heimdal:amd64.
+Preparing to unpack .../13-libheimbase1-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libheimbase1-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libhcrypto4-heimdal:amd64.
+Preparing to unpack .../14-libhcrypto4-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libhcrypto4-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libwind0-heimdal:amd64.
+Preparing to unpack .../15-libwind0-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libwind0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libhx509-5-heimdal:amd64.
+Preparing to unpack .../16-libhx509-5-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libhx509-5-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libkrb5-26-heimdal:amd64.
+Preparing to unpack .../17-libkrb5-26-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libkrb5-26-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libheimntlm0-heimdal:amd64.
+Preparing to unpack .../18-libheimntlm0-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libheimntlm0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libgssapi3-heimdal:amd64.
+Preparing to unpack .../19-libgssapi3-heimdal_7.7.0+dfsg-1ubuntu1_amd64.deb ...
+Unpacking libgssapi3-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../20-libsasl2-modules-db_2.1.27+dfsg-2_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg-2) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../21-libsasl2-2_2.1.27+dfsg-2_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg-2) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../22-libldap-common_2.4.49+dfsg-2ubuntu1.8_all.deb ...
+Unpacking libldap-common (2.4.49+dfsg-2ubuntu1.8) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../23-libldap-2.4-2_2.4.49+dfsg-2ubuntu1.8_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.49+dfsg-2ubuntu1.8) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../24-libnghttp2-14_1.40.0-1build1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.40.0-1build1) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../25-librtmp1_2.4+20151223.gitfa8646d.1-2build1_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build1) ...
+Selecting previously unselected package libssh-4:amd64.
+Preparing to unpack .../26-libssh-4_0.9.3-2ubuntu2.2_amd64.deb ...
+Unpacking libssh-4:amd64 (0.9.3-2ubuntu2.2) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../27-libcurl4_7.68.0-1ubuntu2.7_amd64.deb ...
+Unpacking libcurl4:amd64 (7.68.0-1ubuntu2.7) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../28-curl_7.68.0-1ubuntu2.7_amd64.deb ...
+Unpacking curl (7.68.0-1ubuntu2.7) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../29-libsasl2-modules_2.1.27+dfsg-2_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg-2) ...
+Setting up libkeyutils1:amd64 (1.6-6ubuntu1) ...
+Setting up libpsl5:amd64 (0.21.0-1ubuntu1) ...
+Setting up libbrotli1:amd64 (1.0.7-6ubuntu0.1) ...
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg-2) ...
+Setting up libnghttp2-14:amd64 (1.40.0-1build1) ...
+Setting up krb5-locales (1.17-6ubuntu4.1) ...
+Setting up libldap-common (2.4.49+dfsg-2ubuntu1.8) ...
+Setting up libkrb5support0:amd64 (1.17-6ubuntu4.1) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg-2) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2build1) ...
+Setting up libk5crypto3:amd64 (1.17-6ubuntu4.1) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg-2) ...
+Setting up libroken18-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up libkrb5-3:amd64 (1.17-6ubuntu4.1) ...
+Setting up openssl (1.1.1f-1ubuntu2.8) ...
+Setting up publicsuffix (20200303.0012-1) ...
+Setting up libheimbase1-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up libasn1-8-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up libhcrypto4-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up ca-certificates (20210119~20.04.2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+128 added, 0 removed; done.
+Setting up libwind0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up libgssapi-krb5-2:amd64 (1.17-6ubuntu4.1) ...
+Setting up libssh-4:amd64 (0.9.3-2ubuntu2.2) ...
+Setting up libhx509-5-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up libkrb5-26-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up libheimntlm0-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up libgssapi3-heimdal:amd64 (7.7.0+dfsg-1ubuntu1) ...
+Setting up libldap-2.4-2:amd64 (2.4.49+dfsg-2ubuntu1.8) ...
+Setting up libcurl4:amd64 (7.68.0-1ubuntu2.7) ...
+Setting up curl (7.68.0-1ubuntu2.7) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Processing triggers for ca-certificates (20210119~20.04.2) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# apt-get -y install curlcurl -sL https://deb.nodesource.com/setup_16.x | bash
+
+## Installing the NodeSource Node.js 16.x repo...
+
+
+## Populating apt-get cache...
+
++ apt-get update
+0% [Working]            Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+0% [Connecting to security.ubuntu.com (91.189.91.38)]                                                     Hit:2 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+                                                     0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:3 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers]                        Hit:4 http://security.ubuntu.com/ubuntu focal-security InRelease
+                        0% [Working]0% [Working]20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 76%Reading package lists... 76%Reading package lists... 79%Reading package lists... 79%Reading package lists... 85%Reading package lists... 85%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+
+## Installing packages required for setup: lsb-release gnupg...
+
++ apt-get install -y lsb-release gnupg > /dev/null 2>&1
+
+## Confirming "focal" is supported...
+
++ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_16.x/dists/focal/Release'
+
+## Adding the NodeSource signing key to your keyring...
+
++ curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | gpg --dearmor | tee /usr/share/keyrings/nodesource.gpg >/dev/null
+
+## Creating apt sources list file for the NodeSource Node.js 16.x repo...
+
++ echo 'deb [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x focal main' > /etc/apt/sources.list.d/nodesource.list
++ echo 'deb-src [signed-by=/usr/share/keyrings/nodesource.gpg] https://deb.nodesource.com/node_16.x focal main' >> /etc/apt/sources.list.d/nodesource.list
+
+## Running `apt-get update` for you...
+
++ apt-get update
+0% [Working]            Hit:1 http://archive.ubuntu.com/ubuntu focal InRelease
+0% [Connecting to security.ubuntu.com (91.189.91.39)] [Waiting for headers]                                                                           Get:2 https://deb.nodesource.com/node_16.x focal InRelease [4583 B]
+0% [Waiting for headers] [Waiting for headers] [2 InRelease 4583 B/4583 B 100%]                                                                               0% [Waiting for headers] [Waiting for headers]                                              Hit:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers] [Waiting for headers]                                              Hit:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+                                              0% [Waiting for headers]0% [Waiting for headers]                        Hit:5 http://security.ubuntu.com/ubuntu focal-security InRelease
+0% [Waiting for headers]                        Get:6 https://deb.nodesource.com/node_16.x focal/main amd64 Packages [771 B]
+0% [6 Packages 771 B/771 B 100%]                                0% [Working]0% [6 Packages store 0 B]                         0% [Working]0% [Working]0% [Working]100% [Working]              Fetched 5354 B in 0s (13.9 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 76%Reading package lists... 76%Reading package lists... 79%Reading package lists... 79%Reading package lists... 85%Reading package lists... 85%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+
+## Run `[1msudo apt-get install -y nodejs(B[m` to install Node.js 16.x and npm
+## You may also need development tools to build native addons:
+     sudo apt-get install gcc g++ make
+## To install the Yarn package manager, run:
+     curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+     echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+     sudo apt-get update && sudo apt-get install yarn
+
+
+]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# [Kapt install -y nodejs
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 7%Reading package lists... 7%Reading package lists... 67%Reading package lists... 67%Reading package lists... 68%Reading package lists... 68%Reading package lists... 76%Reading package lists... 76%Reading package lists... 79%Reading package lists... 79%Reading package lists... 85%Reading package lists... 85%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 86%Reading package lists... 91%Reading package lists... 91%Reading package lists... 94%Reading package lists... 94%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+The following NEW packages will be installed:
+  nodejs
+0 upgraded, 1 newly installed, 0 to remove and 5 not upgraded.
+Need to get 26.2 MB of archives.
+After this operation, 123 MB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 https://deb.nodesource.com/node_16.x focal/main amd64 nodejs amd64 16.10.0-deb-1nodesource1 [26.2 MB]
+[33m0% [1 nodejs 16.2 kB/26.2 MB 0%][0m[33m10% [1 nodejs 3269 kB/26.2 MB 12%][0m[33m21% [1 nodejs 6735 kB/26.2 MB 26%][0m[33m31% [1 nodejs 10.2 MB/26.2 MB 39%][0m[33m42% [1 nodejs 13.6 MB/26.2 MB 52%][0m[33m52% [1 nodejs 17.1 MB/26.2 MB 65%][0m[33m60% [1 nodejs 19.8 MB/26.2 MB 76%][0m[33m71% [1 nodejs 23.4 MB/26.2 MB 89%][0m[33m                                  100% [Working][0m              Fetched 26.2 MB in 4s (6497 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+
+7[0;17r8[1ASelecting previously unselected package nodejs.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 8071 files and directories currently installed.)
+Preparing to unpack .../nodejs_16.10.0-deb-1nodesource1_amd64.deb ...
+7[18;0f[42m[30mProgress: [  0%][49m[39m [.......................................................................................................................] 87[18;0f[42m[30mProgress: [ 20%][49m[39m [#######################................................................................................................] 8Unpacking nodejs (16.10.0-deb-1nodesource1) ...
+7[18;0f[42m[30mProgress: [ 40%][49m[39m [###############################################........................................................................] 8Setting up nodejs (16.10.0-deb-1nodesource1) ...
+7[18;0f[42m[30mProgress: [ 60%][49m[39m [#######################################################################................................................] 87[18;0f[42m[30mProgress: [ 80%][49m[39m [###############################################################################################........................] 8
+7[0;18r8[1A[J]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# node apt install -y nodejsnode [K/usr/se rc/app/index.js 
+Hello World
+]0;root@05215cc4e5f9: /root@05215cc4e5f9:/# [Kexit
+exit
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m────────────────────────[0m[49m[33m[0m[33m[43m[30m 1m 38s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[43m[30m[30m[0m[30m[43m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m [33m1m 38s[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m────────────────────────[0m[49m[33m[0m[33m[43m[30m 1m 38s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[43m[30m[30m[0m[30m[43m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[7mdocker commit hopeful_clarke hello-node-world[27m[45D[27m[32md[27m[32mo[27m[32mc[27m[32mk[27m[32me[27m[32mr[39m[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27mh[27mo[27mp[27me[27mf[27mu[27ml[27m_[27mc[27ml[27ma[27mr[27mk[27me[27m [27mh[27me[27ml[27ml[27mo[27m-[27mn[27mo[27md[27me[27m-[27mw[27mo[27mr[27ml[27md= hello-node-world[17D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18Db hello-node-world[17Do hello-node-world[17Dl hello-node-world[17Dd hello-node-world[17D_ hello-node-world[17Db hello-node-world[17Dh hello-node-world[17Da hello-node-world[17Db hello-node-world[17Dh hello-node-world[17Da hello-node-world[17D[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m commit bold_bhabha hello-node-world[K[17D[?12l[?25h
+]2;docker commit bold_bhabha hello-node-world]1;docker]0;script-answers: docker commit bold_bhabha hello-node-worldsha256:4c341529c7abff6eea203ca7e2b2b13c6db6964c453ef7de086ffe0fc12449c9
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[32md[39m[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m container ls -al[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container ls -al[K[?12l[?25h
+]2;docker container ls -al]1;docker]0;script-answers: docker container ls -alCONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                          PORTS     NAMES
+05215cc4e5f9   ubuntu    "bash"    14 minutes ago   Exited (0) About a minute ago             bold_bhabha
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[32mdocker[39m container ls -all [?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container ls -l[K[?12l[?25h
+]2;docker container ls -l]1;docker]0;script-answers: docker container ls -lCONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                          PORTS     NAMES
+05215cc4e5f9   ubuntu    "bash"    14 minutes ago   Exited (0) About a minute ago             bold_bhabha
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[32mdocker[39m container ls -l  [?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container ls[K[?12l[?25h
+]2;docker container ls]1;docker]0;script-answers: docker container lsCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[32mdocker[39m container ls -a[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container ls -a[K[?12l[?25h
+]2;docker container ls -a]1;docker]0;script-answers: docker container ls -aCONTAINER ID   IMAGE                           COMMAND                  CREATED          STATUS                     PORTS     NAMES
+05215cc4e5f9   ubuntu                          "bash"                   14 minutes ago   Exited (0) 2 minutes ago             bold_bhabha
+9d6b48335981   catthehacker/ubuntu:act-18.04   "/usr/bin/tail -f /d…"   2 days ago       Exited (137) 2 days ago              act-Deployment-pipeline-simple-deployment-pipeline
+df8a809deb74   giuxtaposition/sale-taxes       "yarn start -t '2 bo…"   8 weeks ago      Exited (0) 8 weeks ago               laughing_villani
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[32md[39m[33md[33mo[39m[1m[31md[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mk[0m[39m[1m[31mk[1m[31me[0m[39m[0m[32md[0m[32mo[0m[32mc[0m[32mk[0m[32me[32mr[39m [39md[39mo[39mc[39mk[39me[39mr [7mcontainer rm[27m[19D[32md[32mo[32mc[32mk[32me[32mr[39m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mm blo  old_bhabha[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container rm bold_bhabha[K[?12l[?25h
+]2;docker container rm bold_bhabha]1;docker]0;script-answers: docker container rm bold_bhabhabold_bhabha
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[32mdocker[39m container rm bold_bhabha           a 9d6b48335981[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container rm 9d6b48335981[K[?12l[?25h
+]2;docker container rm 9d6b48335981]1;docker]0;script-answers: docker container rm 9d6b483359819d6b48335981
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[32mdocker[39m container rm 9d6b48335981            laughing_villani[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container rm laughing_villani[K[?12l[?25h
+]2;docker container rm laughing_villani]1;docker]0;script-answers: docker container rm laughing_villanilaughing_villani
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[32mdocker[39m container rm laughing_villani[16D9d6b48335981    [12Dbold_bhabha [14Dls -a         [9D   -l   -a[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container ls -a[K[?12l[?25h
+]2;docker container ls -a]1;docker]0;script-answers: docker container ls -aCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+                                                                                                                                             ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?4[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────────────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[7mdocker container run -it --name hello-node node:16 bash[27m[55D[27m[32md[27m[32mo[27m[32mc[27m[32mk[27m[32me[27m[32mr[39m[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mh[27me[27ml[27ml[27mo[27m-[27mn[27mo[27md[27me[27m [27mn[27mo[27md[27me[27m:[27m1[27m6[27m [27mb[27ma[27ms[27mh[?1l>[?25l[?2004l[A[A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mdocker[39m container run -it --name hello-node node:16 bash[K[?12l[?25h
+]2;docker container run -it --name hello-node node:16 bash]1;docker]0;script-answers: docker container run -it --name hello-node node:16 bashroot@da9183ddaea5:/# mkdir /usr/src/app
+root@da9183ddaea5:/# [Kroot@da9183ddaea5:/# [Kroot@da9183ddaea5:/# exit
+exit
+                                                                                                                                ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?5[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────[0m[49m[33m[0m[33m[43m[30m 1m 35s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[43m[30m[30m[0m[30m[43m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m [33m1m 36s[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m?5[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m───────────[0m[49m[33m[0m[33m[43m[30m 1m 35s[0m[30m[43m[43m[30m [0m[30m[43m[43m[30m [0m[30m[43m[43m[30m[30m[0m[30m[43m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[1m[31mg[0m[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m add [4m.[24m[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mgit[39m add [4m.[24m[K[?12l[?25h
+]2;git add .]1;git]0;script-answers: git add .                                                                                                                                ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m+4 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[39m───────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m+4 [30m?1[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[39m───────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[1m[31mg[0m[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m commit -m 1         [1m[31mg[1m[31mi[0m[39m[39m [1m[31mg[0m[39m[0m[39m [0m[39m [1m[31mg[0m[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m t remove -v[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mgit[39m remove -v[K[?12l[?25h
+]2;git remove -v]1;git]0;script-answers: git remove -vgit: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+	remote
+                                                                                                                                ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m⇡1[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m──────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m[39m [36m⇡[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[42m[34m[0m[34m[42m[42m[30m  [30m main [30m⇡1[0m[30m[42m[42m[30m [0m[30m[42m[49m[32m[0m[32m[49m[39m[39m──────────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[32mgit[39m remove -v    te -v[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mgit[39m remote -v[K[?12l[?25h
+]2;git remote -v]1;git]0;script-answers: git remote -vorigin	git@github.com:fullstack-hy2020/part12-containers-applications.git (fetch)
+origin	git@github.com:fullstack-hy2020/part12-containers-applications.git (push)
+                                                                                                                                ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m⇡1 [30m!3[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[39m───────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m [36m⇡[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/[1m[44m[39mcontainers-applications[0m[44m[44m[39m/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m⇡1 [30m!3[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[39m───────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[32mgit[39m remote -vv[4C[9Dpush origin main[16Dcommit -m [33m'[33mp[33ma[33mr[33mt[33m [33m12 a'[39m[21Dadd [4m.[24m     [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mgit[39m add [4m.[24m[K[?12l[?25h
+]2;git add .]1;git]0;script-answers: git add .                                                                                                                                ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/containers-applications/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m+5 [30m!1 [30m?3[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[39m────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/containers-applications/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m+5 [30m!1 [30m?3[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[39m────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[32mgit[39m add [4m.[24mremo[24mte -vv[4C[9Dpush origin main[16Dcommit -m [33m'[33mp[33ma[33mr[33mt[33m [33m12 a'[39m[33ma[39m[39m [33m [39m[39m [33m2[39m[39m [33m1[39m[39m [33m [39m[39m [33mt[39m[39m [33mr[39m[39m [33ma[39m[39m [33mp[39m[39m [33m'[39m[39m [39m         [1m[31mg[1m[31mi[0m[39m[39m [1m[31mg[0m[39m[0m[39m [0m[39m [32mgit[39m add [4m.[24m[9D[32md[32mo[32mc[32mk[32me[32mr[39m c[24montainer cp ./index.js hello-node:/usr/src/app/index.js[63D[32mg[32mi[32mt[39m[39m [39ma[39mdd [4m.[24m                                                      [54D[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mgit[39m add [4m.[24m[K[?12l[?25h
+]2;git add .]1;git]0;script-answers: git add .                                                                                                                                ]2;giu@Kumiko:~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers]1;..cript-answers]0;~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers
+[0m[27m[24m[J[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/containers-applications/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m+4 [30m!1 [30m?3[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[39m────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[?1h=[?2004h[A[A[0m[27m[24m[J[34m~/Coding/Web Development/full stack open/part 12/containers-applications/script-answers[39m [39mmain[39m*[39m
+[0m[49m[39m
+
+[A[0m[47m[39m [0m[47m[47m[39m [0m[47m[44m[37m[0m[37m[44m[44m[39m  [1m[44m[39m~[0m[44m[44m[39m/[39mCo[0m[44m[44m[39m/[39mW[0m[44m[44m[39m/[1m[44m[39mfull stack open[0m[44m[44m[39m/part 12/containers-applications/[1m[44m[39mscript-answers[0m[44m[44m[39m[0m[44m[44m[39m [0m[44m[43m[34m[0m[34m[43m[43m[30m  [30m main [30m+4 [30m!1 [30m?3[0m[30m[43m[43m[30m [0m[30m[43m[49m[33m[0m[33m[49m[39m[39m────────────────[0m[49m[30m[0m[30m[40m[33m giu@Kumiko[0m[33m[40m[40m[33m[0m[33m[40m[40m[33m [0m[33m[40m[49m[39m
+[0m[49m[39m[0m[49m[39m❯[0m[49m[39m[0m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[1m[31mg[0m[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m status[?1l>[?25l[?2004l[3A[0m[27m[24m[J[0m[49m[27m[24m[39m❯[0m[49m[39m[27m[24m [32mgit[39m status[K[?12l[?25h
+]2;git status]1;git]0;script-answers: git statusOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	[32mnew file:   exercise12_1.txt[m
+	[32mnew file:   exercise12_2.txt[m
+	[32mnew file:   exercise12_3.txt[m
+	[32mnew file:   exercise12_4.txt[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
