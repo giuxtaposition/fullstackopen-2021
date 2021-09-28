@@ -1,3 +1,7 @@
+# Data
+mongo_data
+redis_data
+
 # Logs
 logs
 *.log
